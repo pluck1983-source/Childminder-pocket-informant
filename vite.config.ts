@@ -2,9 +2,9 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
-// Served from a GitHub Pages project site (https://<user>.github.io/Tax-planner/)
+// Served from a GitHub Pages project site (https://<user>.github.io/Childminder-pocket-informant/)
 // in production, but from the root locally.
-const base = process.env.GITHUB_PAGES ? '/Tax-planner/' : '/'
+const base = process.env.GITHUB_PAGES ? '/Childminder-pocket-informant/' : '/'
 
 // https://vite.dev/config/
 export default defineConfig({
