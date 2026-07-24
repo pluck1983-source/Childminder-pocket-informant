@@ -40,7 +40,7 @@ export function TermDatesManager({ terms, onAdd, onUpdate, onDelete }: Props) {
                 <span className="text-xs text-slate-400">
                   {t.startDate && t.endDate ? `${formatDate(t.startDate)} - ${formatDate(t.endDate)}` : 'Set both dates'}
                 </span>
-                <button type="button" onClick={() => onDelete(t.id)} className="text-xs text-rose-500 hover:underline">
+                <button type="button" onClick={() => onDelete(t.id)} className="text-xs text-rose-500 hover:underline relative before:absolute before:-inset-1 before:content-['']">
                   Remove term
                 </button>
               </div>

@@ -188,7 +188,7 @@ function RecordRow({
           {record.actualArrival && ` - arrived ${record.actualArrival}`}
           {record.actualDeparture && ` - left ${record.actualDeparture}`}
         </span>
-        <button type="button" onClick={onDelete} className="text-xs text-rose-500 hover:underline ml-auto">
+        <button type="button" onClick={onDelete} className="text-xs text-rose-500 hover:underline ml-auto relative before:absolute before:-inset-1 before:content-['']">
           Remove
         </button>
       </div>

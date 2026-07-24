@@ -100,7 +100,7 @@ function RateHistory({
                   <span className={i === 0 ? 'font-medium' : 'text-slate-400'}>{formatGBPPrecise(r.hourlyRate)}/hr</span>
                   <span className="text-xs text-slate-400">from {formatDate(r.effectiveFrom)}</span>
                   {i === 0 && <span className="text-xs px-1.5 py-0.5 rounded-full bg-emerald-50 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400">current</span>}
-                  <button type="button" onClick={() => onDelete(r.id)} className="text-xs text-rose-500 hover:underline ml-auto">
+                  <button type="button" onClick={() => onDelete(r.id)} className="text-xs text-rose-500 hover:underline ml-auto relative before:absolute before:-inset-1 before:content-['']">
                     Remove
                   </button>
                 </li>

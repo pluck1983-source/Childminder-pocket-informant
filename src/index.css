@@ -7,6 +7,25 @@
 body {
   margin: 0;
   font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+  /* Stop the whole page rubber-banding on iOS when installed as a standalone
+     app - scrollable regions (e.g. the tab bar) still scroll normally, this
+     only stops the outer page bounce that looks broken without Safari chrome
+     around it. */
+  overscroll-behavior-y: none;
+}
+
+/* Replace the default gray/blue tap-highlight flash on iOS with a subtle
+   press state instead, so buttons feel like native controls rather than
+   web links - real feedback comes from this dip, not the browser's flash. */
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+button:active,
+a:active {
+  opacity: 0.7;
 }
 
 /* iOS Safari auto-zooms the page when a focused form field is under 16px -

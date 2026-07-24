@@ -101,7 +101,7 @@ export function NonFundedRatesManager({ rates, ageBands, onAddNonFunded, onDelet
                 {r.ageBandId ? (ageBands.find((b) => b.id === r.ageBandId)?.label ?? 'Unknown band') : 'All ages'}
               </span>
               <span className="text-xs text-slate-400">from {formatDate(r.effectiveFrom)}</span>
-              <button type="button" onClick={() => onDeleteNonFunded(r.id)} className="text-xs text-rose-500 hover:underline ml-auto">
+              <button type="button" onClick={() => onDeleteNonFunded(r.id)} className="text-xs text-rose-500 hover:underline ml-auto relative before:absolute before:-inset-1 before:content-['']">
                 Remove
               </button>
             </li>
@@ -125,7 +125,7 @@ export function NonFundedRatesManager({ rates, ageBands, onAddNonFunded, onDelet
               </span>
               <span className="text-xs text-slate-400">{r.graceMinutes}min grace</span>
               <span className="text-xs text-slate-400">from {formatDate(r.effectiveFrom)}</span>
-              <button type="button" onClick={() => onDeleteLatePickup(r.id)} className="text-xs text-rose-500 hover:underline ml-auto">
+              <button type="button" onClick={() => onDeleteLatePickup(r.id)} className="text-xs text-rose-500 hover:underline ml-auto relative before:absolute before:-inset-1 before:content-['']">
                 Remove
               </button>
             </li>

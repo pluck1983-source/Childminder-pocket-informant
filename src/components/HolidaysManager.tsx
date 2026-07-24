@@ -82,7 +82,7 @@ function HolidayRow({ h, title, onDelete }: { h: Holiday; title: string; onDelet
             {formatDate(h.startDate)} - {formatDate(h.endDate)}
           </span>
         </span>
-        <button type="button" onClick={onDelete} className="text-xs text-rose-500 hover:underline shrink-0">
+        <button type="button" onClick={onDelete} className="text-xs text-rose-500 hover:underline shrink-0 relative before:absolute before:-inset-1 before:content-['']">
           Remove
         </button>
       </div>

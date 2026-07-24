@@ -107,14 +107,14 @@ function App() {
             <button
               type="button"
               onClick={handleExport}
-              className="text-xs px-3 py-1.5 rounded border border-slate-200 hover:border-slate-400 dark:border-slate-700"
+              className="text-xs px-3 py-2 min-h-9 rounded border border-slate-200 hover:border-slate-400 dark:border-slate-700"
             >
               Export
             </button>
             <button
               type="button"
               onClick={handleImportClick}
-              className="text-xs px-3 py-1.5 rounded border border-slate-200 hover:border-slate-400 dark:border-slate-700"
+              className="text-xs px-3 py-2 min-h-9 rounded border border-slate-200 hover:border-slate-400 dark:border-slate-700"
             >
               Import
             </button>
@@ -130,7 +130,7 @@ function App() {
               key={id}
               type="button"
               onClick={() => setTab(id)}
-              className={`px-3 py-2 text-sm border-b-2 -mb-px whitespace-nowrap shrink-0 ${
+              className={`px-3 py-3 min-h-11 text-sm border-b-2 -mb-px whitespace-nowrap shrink-0 ${
                 tab === id
                   ? 'border-indigo-600 text-indigo-600 dark:text-indigo-400 font-medium'
                   : 'border-transparent text-slate-500 hover:text-slate-700 dark:hover:text-slate-300'

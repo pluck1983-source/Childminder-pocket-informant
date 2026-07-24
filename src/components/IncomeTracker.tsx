@@ -157,7 +157,7 @@ export function IncomeTracker({ state, onAddFunding, onDeleteFunding, onAddParen
                 </span>
                 <span className="flex items-center gap-2">
                   <span className="font-medium tabular-nums">{formatGBP(r.amount)}</span>
-                  <button type="button" onClick={() => onDeleteFunding(r.id)} className="text-xs text-rose-500 hover:underline">
+                  <button type="button" onClick={() => onDeleteFunding(r.id)} className="text-xs text-rose-500 hover:underline relative before:absolute before:-inset-1 before:content-['']">
                     Remove
                   </button>
                 </span>
@@ -183,7 +183,7 @@ export function IncomeTracker({ state, onAddFunding, onDeleteFunding, onAddParen
               </span>
               <span className="flex items-center gap-2">
                 <span className="font-medium tabular-nums">{formatGBP(r.amount)}</span>
-                <button type="button" onClick={() => onDeleteParent(r.id)} className="text-xs text-rose-500 hover:underline">
+                <button type="button" onClick={() => onDeleteParent(r.id)} className="text-xs text-rose-500 hover:underline relative before:absolute before:-inset-1 before:content-['']">
                   Remove
                 </button>
               </span>

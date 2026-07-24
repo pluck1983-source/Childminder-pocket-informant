@@ -38,7 +38,7 @@ export function AgeBandsEditor({ ageBands, onAdd, onUpdate, onDelete }: Props) {
               onChange={(e) => onUpdate(band.id, { minAgeMonths: Number(e.target.value) })}
             />
             <span className="text-xs text-slate-400 shrink-0">months+</span>
-            <button type="button" onClick={() => onDelete(band.id)} className="text-xs text-rose-500 hover:underline">
+            <button type="button" onClick={() => onDelete(band.id)} className="text-xs text-rose-500 hover:underline relative before:absolute before:-inset-1 before:content-['']">
               Remove
             </button>
           </li>

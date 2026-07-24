@@ -168,7 +168,7 @@ function AttendancePatternEditor({
             <li key={p.id} className="flex items-center gap-2">
               <span>{PATTERN_LABELS[p.pattern]}</span>
               <span className="text-slate-400">from {formatDate(p.effectiveFrom)}</span>
-              <button type="button" onClick={() => onDelete(p.id)} className="text-rose-500 hover:underline ml-auto">
+              <button type="button" onClick={() => onDelete(p.id)} className="text-rose-500 hover:underline ml-auto relative before:absolute before:-inset-1 before:content-['']">
                 Remove
               </button>
             </li>
@@ -411,7 +411,7 @@ function ChildDetail({
               + Add
             </button>
           ) : (
-            <button type="button" className="text-xs text-rose-500 hover:underline" onClick={() => onUpdate({ secondaryParent: null })}>
+            <button type="button" className="text-xs text-rose-500 hover:underline relative before:absolute before:-inset-1 before:content-['']" onClick={() => onUpdate({ secondaryParent: null })}>
               Remove
             </button>
           )}
@@ -437,7 +437,7 @@ function ChildDetail({
               + Add
             </button>
           ) : (
-            <button type="button" className="text-xs text-rose-500 hover:underline" onClick={() => onUpdate({ emergencyContact: null })}>
+            <button type="button" className="text-xs text-rose-500 hover:underline relative before:absolute before:-inset-1 before:content-['']" onClick={() => onUpdate({ emergencyContact: null })}>
               Remove
             </button>
           )}

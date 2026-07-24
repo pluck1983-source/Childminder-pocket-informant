@@ -114,7 +114,7 @@ export function SmallButton({
     primary: 'border-indigo-600 bg-indigo-600 text-white hover:bg-indigo-700',
   }[variant];
   return (
-    <button type={type} onClick={onClick} className={`text-xs px-2.5 py-1.5 rounded border whitespace-nowrap ${styles}`}>
+    <button type={type} onClick={onClick} className={`text-xs px-3 py-2 min-h-9 rounded border whitespace-nowrap ${styles}`}>
       {children}
     </button>
   );
